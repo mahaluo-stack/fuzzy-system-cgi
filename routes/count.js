@@ -16,6 +16,7 @@ module.exports = function (app) {
             res.status(400).send('Request body needs some actual text in order to count words. \n');
         }
         else {
+            // is the body a JSON object or raw text?
             try {
                 let json = Object.values(JSON.parse(req.body));
                 try {
@@ -24,7 +25,7 @@ module.exports = function (app) {
                     res.status(400).send(error);
                 }
             } catch (error) {
-                // error = req.body was not an object, "unexpected token in JSON~"
+                // error = req.body was raw text, "unexpected token in JSON~"
                 try {
                     res.send(getFrequents(req.body));
                 } catch (error) {

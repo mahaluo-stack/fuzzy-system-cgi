@@ -3,10 +3,10 @@ META INFO:
 This is a REST API project using Node.js (v18.12.1, https://nodejs.org/en/) created by Max Häggqvist Luotomäki (maxhaggqvist@gmail.com).
 The service finds and returns the most used words in a string.
 
-It uses NPM modules: 
-Express v^4.18.2 (https://expressjs.com/)
-Body-parser v^1.20.1 (https://www.npmjs.com/package/body-parser)
-Helmet v^6.0.1 (https://helmetjs.github.io/)
+The project uses NPM (https://www.npmjs.com/) dependencies: 
+Express v^4.18.2 (https://expressjs.com/).
+Body-parser v^1.20.1 (https://www.npmjs.com/package/body-parser).
+Helmet v^6.0.1 (https://helmetjs.github.io/).
 
 The Node server listens on a defaulted port of 8080, unless you set an environment variable yourself.
 It has the route /api/count that accepts json and text headers at a default size of 50kb, and at a default returns the 10 most used words in the text. 
@@ -15,23 +15,38 @@ It uses a token bucket form of rate limiting to help create an even data flow an
 
 ---
 
+LICENSING:
+
+This project is ISC licensed.
+Express is MIT licensed.
+Body-parser is MIT licensed.
+Helmet is MIT licensed.
+
+Read more about the ISC license at https://opensource.org/licenses/ISC.
+Read more about the MIT license at https://opensource.org/licenses/MIT.
+
+---
+
 GETTING STARTED:
 
 To run this program, Node.js (https://nodejs.org/en/download/) needs to be installed on the machine.
 
-Clone the repository: 
-git clone https://github.com/mahaluo-stack/fuzzy-system-cgi.git
-
-Download the repository:
-https://github.com/mahaluo-stack/fuzzy-system-cgi
-
-Running the server: 
-After installing Node.js and downloading the repository, open a terminal (command prompt) in the root folder of the project.
+This guide requires running commands in a terminal (command prompt), sometimes in a specific folder.
 
 Windows: Open the project folder and press "alt + D" to focus on the adress bar, type cmd and press enter.
-Mac: Open the project folder, if there is no path bar at the bottom of the Finder window, choose View -> Show Path Bar, ctrl click the folder and choose "open terminal".
+Mac: Open the project folder, if there is no path bar at the bottom of the Finder window, choose View -> Show Path Bar, then ctrl click the folder at the bottom and choose "open terminal".
 
-Now run the command "node index.js" to run the Node server.
+To clone the repository using git:
+See https://docs.github.com/en/get-started/getting-started-with-git.
+Open a folder to clone the project into, run the command "git clone https://github.com/mahaluo-stack/fuzzy-system-cgi.git".
+
+To download the repository:
+https://github.com/mahaluo-stack/fuzzy-system-cgi Press "code" and "Download ZIP". Unzip the downloaded file.
+
+Running the server: 
+After installing Node.js and cloning or downloading the repository, open a terminal in the root folder of the project.
+
+Run the command "node index.js" to run the Node server.
 
 ---
 
@@ -73,6 +88,27 @@ Default body size of a request is set to 50kb.
 Default response array of most frequent words used is set to 10 words.
 Default port is set to 8080, unless an environment variable exists, in which case it will be preferred.
 
-To edit these default variables, find the file "API_CONSTANTS.js" in the util folder.
+To edit these default variables, find the file "API_CONSTANTS.js" in the util folder and change the values.
+
+---
+
+MAINTENANCE: 
+
+Make sure to keep Node.js updated at https://nodejs.org/en/download/.
+To check what version you have installed, open a terminal anywhere and run the command "node -v".
+
+Always make sure to run the latest version of Express (https://expressjs.com/).
+Stay updated on security issues at https://expressjs.com/en/advanced/security-updates.html.
+
+Make sure to update and run the latest versions of all NPM dependencies. 
+See "dependencies" in the file "package.json" in the root folder of the project.
+
+You can use NPM to manage dependencies. To get started with NPM, see https://docs.npmjs.com/getting-started.
+Open a terminal in the root folder of the project and run the command "npm audit" to scan dependencies for vulnerabilities.
+
+You may also consider using Snyk (https://snyk.io/) for managing dependencies.
+Read more about using Snyk to maintain NPM dependencies at https://snyk.io/blog/how-to-maintain-npm-dependencies-in-your-project/.
+
+Consider installing Nodemon (https://www.npmjs.com/package/nodemon) on your machine for a more pleasant developer environment when working on the project.
 
 ---

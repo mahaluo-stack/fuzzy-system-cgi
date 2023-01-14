@@ -9,7 +9,7 @@ module.exports = {
         let wordSplit;
         let res = {};
       
-        // split the string into words
+        // split the text into words, remove spaces, numbers and special characters, .match returns an array
         try {
             wordSplit = text.match(/[a-zA-Z]+'?[a-zA-Z]+/g);
         } catch (error) {
@@ -21,10 +21,14 @@ module.exports = {
             throw 'No words found in text. \n';
         }
         else { 
+
+            // iterate through the words and increment their counters if it has been used already
             for (let i = 0; i < wordSplit.length; i++) { res[wordSplit[i]] = (res[wordSplit[i]] || 0) + 1 };
             
+            // sortObj sorts the array, Object.assign turns the array into an object
             const result = Object.assign({}, ...sortObj(res).slice(0, RESPONSE_ARRAY));
 
+            // return the result
             return result;
         }
     }
