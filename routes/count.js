@@ -1,8 +1,11 @@
 const bodyParser = require('body-parser');
 const path = require('path');
 
+// function to find the most frequently used words
 const { getFrequents } = require(path.join(__dirname, '..', 'util', 'frequenceCounter'));
+// limit constants for number of serviceable clients per second and request body size
 const { CLIENT, BODY_PARSER } = require(path.join(__dirname, '..', 'util', 'API_CONSTANTS'));
+// middleware to limit requests
 const limitRequestsMiddleware = require(path.join(__dirname, '..', 'rateLimiter', 'tokenBucketMiddleware'));
 
 module.exports = function (app) {
