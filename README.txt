@@ -38,10 +38,10 @@ Mac: Open the project folder, if there is no path bar at the bottom of the Finde
 
 To clone the repository using git:
 See https://docs.github.com/en/get-started/getting-started-with-git.
-Create a folder to clone the project into open a terminal in the folder and run the command "git clone https://github.com/mahaluo-stack/fuzzy-system-cgi.git".
+Create a folder to clone the project into, open a terminal in the folder and run the command "git clone https://github.com/mahaluo-stack/fuzzy-system-cgi.git".
 
 To download the repository:
-https://github.com/mahaluo-stack/fuzzy-system-cgi Press "code" and "Download ZIP". Unzip the downloaded file.
+https://github.com/mahaluo-stack/fuzzy-system-cgi Press "Code" and "Download ZIP". Unzip the downloaded file.
 
 Running the server: 
 After installing Node.js and cloning or downloading the repository, open a terminal in the root folder of the project.
