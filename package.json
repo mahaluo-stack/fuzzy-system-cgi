@@ -1,0 +1,15 @@
+{
+  "name": "hemuppgift",
+  "version": "1.0.0",
+  "description": "hemuppgift från CGI",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Max Häggqvist",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
