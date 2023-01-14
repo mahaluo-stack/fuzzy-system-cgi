@@ -29,12 +29,15 @@ Read more about the MIT license at https://opensource.org/licenses/MIT.
 
 GETTING STARTED:
 
-To run this program, Node.js (https://nodejs.org/en/download/) needs to be installed on the machine.
-
-This guide requires running commands in a terminal (command prompt), sometimes in a specific folder.
+This guide requires running commands in a terminal (command prompt), often in a specific folder.
 
 Windows: Open the project folder and press "alt + D" to focus on the adress bar, type cmd and press enter.
 Mac: Open the project folder, if there is no path bar at the bottom of the Finder window, choose View -> Show Path Bar, then ctrl click the folder at the bottom and choose "open terminal".
+
+To run the program, Node.js (https://nodejs.org/en/download/) also needs to be installed on the machine.
+
+The project uses NPM dependencies that will need to be installed before it can run. 
+To get started with NPM, see https://docs.npmjs.com/getting-started.
 
 To clone the repository using git:
 See https://docs.github.com/en/get-started/getting-started-with-git.
@@ -46,7 +49,8 @@ https://github.com/mahaluo-stack/fuzzy-system-cgi Press "Code" and "Download ZIP
 Running the server: 
 After installing Node.js and cloning or downloading the repository, open a terminal in the root folder of the project.
 
-Run the command "node index.js" to run the Node server.
+To install dependencies, run the command "npm install".
+To start the server, run the command "node index.js".
 
 ---
 
@@ -102,9 +106,7 @@ Stay updated on security issues at https://expressjs.com/en/advanced/security-up
 
 Make sure to update and run the latest versions of all NPM dependencies. 
 See "dependencies" in the file "package.json" in the root folder of the project.
-
-You can use NPM to manage dependencies. To get started with NPM, see https://docs.npmjs.com/getting-started.
-Open a terminal in the root folder of the project and run the command "npm audit" to scan dependencies for vulnerabilities.
+Open a terminal in the root folder of the project and run the command "npm audit" to scan the dependencies for vulnerabilities.
 
 You may also consider using Snyk (https://snyk.io/) for managing dependencies.
 Read more about using Snyk to maintain NPM dependencies at https://snyk.io/blog/how-to-maintain-npm-dependencies-in-your-project/.
