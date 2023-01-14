@@ -83,7 +83,7 @@ This is because the data sent was an empty string, and no words could be counted
 
 API SPECIFICS:
 
-Default client throttle is set to 5000 clients per second.
+Default client throttle is set to 1000 clients per second.
 Default body size of a request is set to 50kb.
 Default response array of most frequent words used is set to 10 words.
 Default port is set to 8080, unless an environment variable exists, in which case it will be preferred.
