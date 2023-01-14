@@ -6,10 +6,12 @@ The service finds and returns the most used words in a string.
 It uses NPM modules: 
 Express v^4.18.2 (https://expressjs.com/)
 Body-parser v^1.20.1 (https://www.npmjs.com/package/body-parser)
+Helmet v^6.0.1 (https://helmetjs.github.io/)
 
 The Node server listens on a defaulted port of 8080, unless you set an environment variable yourself.
 It has the route /api/count that accepts json and text headers at a default size of 50kb, and at a default returns the 10 most used words in the text. 
 The return format is a JSON object containing the most used words, and the number of times each word was used.
+It uses a token bucket form of rate limiting to help create an even data flow and prevent flooding, it is set to 1000 clients per second as a default.
 
 ---
 

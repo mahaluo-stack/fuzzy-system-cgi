@@ -1,6 +1,6 @@
 module.exports = { 
     // number of clients to server per second
-    CLIENT: 5000,
+    CLIENT: 1000,
     // size of request body
     BODY_PARSER: '50kb',
     // size of array sent back (sends back the top 10 most used words)
