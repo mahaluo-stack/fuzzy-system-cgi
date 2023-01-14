@@ -98,6 +98,10 @@ To edit these default variables, find the file "API_CONSTANTS.js" in the util fo
 
 MAINTENANCE: 
 
+For setting environment variables, you can use the NPM package dotenv (https://www.npmjs.com/package/dotenv).
+It is highly recommended to use environment variables for API keys and tokens that are secret. 
+Also make sure to add the ".env" file to the .gitignore list, so it does not get uploaded to your repository.
+
 Make sure to keep Node.js updated at https://nodejs.org/en/download/.
 To check what version you have installed, open a terminal anywhere and run the command "node -v".
 
